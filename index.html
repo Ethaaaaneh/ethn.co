@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <head>
+        <title>ETHN</title>
+    
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;1,300&display=swap" rel="stylesheet"> 
+    
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.scss">
+    
+    </head>
+<body>
+    <div class="spacer layer1"></div>
+            <h1 class="logo">ETHN</h1>
+
+<div class="container">
+    
+    <a href="https://osu.ppy.sh/users/ethaaaan">
+    <img class="grid-img"
+     src="osulogo.webp"
+     alt="Osu! Logo">
+    </a>
+     
+    <a href="https://github.com/Ethaaaaneh">
+    <img class="grid-img"
+     src="githublogo.png"
+     alt="Github Logo">
+    </a>
+    <div class="popup" onclick="myFunction()">
+        <input class="grid-img" type="image" id="image" src="discordlogo.png" onclick="copyToClipboard('#p1')"></input>
+         <span style="display: block;" class="popuptext" id="myPopup">Ethaaaan#0001 Copied to clipboard!</span>
+    </div>
+</div>
+</body>
+
+<footer>
+
+    <p style="display: none;" id="p1">Ethaaaan#0001</p>
+
+<script>
+    function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+</script>
+</footer>
+
+</html>
